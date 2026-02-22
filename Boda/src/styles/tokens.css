@@ -1,0 +1,36 @@
+:root {
+  /* Fondo papel (claro) */
+  --paper-0: #fff9f1;
+  --paper-50: #fcead7;
+  --paper-100: #f3e6d8;
+
+  /* Tinta suave (NO negro) */
+  --ink-900: #2b2a2d; /* texto principal (gris cálido) */
+  --ink-700: #4a4850; /* texto secundario */
+  --ink-500: #6e6b73; /* texto suave */
+
+  /* Sakura / cielo */
+  --sakura-200: #fad4cf;
+  --sakura-300: #f9c2bb;
+  --sky-200: #d6e2ea;
+  --sky-300: #adbec7;
+
+  /* Coral / terracota (acentos) */
+  --coral-400: #ffa28a;
+  --coral-500: #f78762;
+  --terracotta-600: #d7763c;
+
+  /* Oliva (camisa) */
+  --olive-200: #d8d6c3;
+  --olive-500: #9d8f43;
+  --olive-700: #484931;
+
+  /* UI */
+  --border: 1px solid rgba(43, 42, 45, 0.1);
+  --shadow: 0 10px 30px rgba(43, 42, 45, 0.1);
+  --radius-lg: 18px;
+
+  /* Botones */
+  --btn-bg: rgba(255, 255, 255, 0.65);
+  --btn-border: rgba(43, 42, 45, 0.14);
+}

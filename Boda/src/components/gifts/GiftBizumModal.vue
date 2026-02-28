@@ -2,7 +2,6 @@
   <div class="overlay" role="dialog" aria-modal="true" @click.self="close">
     <div class="modal">
       <div class="modal__header">
-        <p class="modal__eyebrow">Regalo de boda</p>
         <h3 class="modal__title">{{ experience.title }}</h3>
         <button class="x" type="button" @click="close" aria-label="Cerrar">
           ✕
@@ -164,6 +163,9 @@ const formatMoney = (n: number) =>
 
   padding: 18px;
   color: var(--ink-900);
+  max-height: calc(100dvh - 36px);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal__header {
@@ -239,6 +241,7 @@ const formatMoney = (n: number) =>
 
 .iban {
   letter-spacing: 0.03em;
+  overflow-wrap: anywhere;
 }
 
 .hint {

@@ -15,8 +15,6 @@
         :deadline-date="deadlineDate"
       />
 
-      <StorySection :timeline="timeline" />
-
       <LocationSection
         :ceremony="ceremony"
         :banquet="banquet"

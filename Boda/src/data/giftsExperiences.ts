@@ -45,7 +45,7 @@ export const giftsExperiences: GiftExperience[] = [
     description:
       "Una cena de sushi inolvidable para brindar por este nuevo capítulo.",
     totalCost: 120,
-    progressPct: 35,
+    progressPct: 0,
     tags: ["Comida", "Tokio"],
   },
   {
@@ -56,7 +56,7 @@ export const giftsExperiences: GiftExperience[] = [
     description:
       "Una tarde de desconexión total en un onsen para recargar energía.",
     totalCost: 90,
-    progressPct: 10,
+    progressPct: 0,
     tags: ["Relax"],
   },
   {
@@ -67,7 +67,7 @@ export const giftsExperiences: GiftExperience[] = [
     description:
       "Dormir en un ryokan con tatami y desayuno tradicional. Plan romántico total.",
     totalCost: 220,
-    progressPct: 55,
+    progressPct: 0,
     tags: ["Alojamiento"],
   },
   {
@@ -78,7 +78,7 @@ export const giftsExperiences: GiftExperience[] = [
     description:
       "Un trayecto en tren bala para movernos entre ciudades con estilo.",
     totalCost: 160,
-    progressPct: 25,
+    progressPct: 0,
     tags: ["Transporte"],
   },
 ];

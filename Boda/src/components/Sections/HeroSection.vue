@@ -76,6 +76,9 @@ const go = (id: string) => scrollToSection(id);
 .container {
   width: min(1100px, calc(100% - 32px));
   margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  gap: 18px;
 }
 .hero__card {
   border: 1px solid rgba(255, 255, 255, 0.12);

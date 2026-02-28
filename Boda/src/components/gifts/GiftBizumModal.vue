@@ -14,7 +14,7 @@
       <div class="box">
         <template v-if="experience.kind === 'withCost'">
           <p class="k">Coste de la experiencia</p>
-          <p class="v">{{ formatMoney(experience.totalCost) }}</p>
+          <p class="v"></p>
           <p class="hint">
             La aportación es <strong>voluntaria</strong>: puedes aportar lo que
             te apetezca 🤍

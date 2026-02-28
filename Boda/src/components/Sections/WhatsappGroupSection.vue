@@ -9,7 +9,7 @@
       <h3 class="card__title">Necesitamos que estés dentro 🤍</h3>
 
       <p class="card__text">
-        Utilizaremos el grupo de WhatsApp ir dejando
+        Utilizaremos el grupo de WhatsApp para ir dejando
         <strong>los detalles más importantes</strong> de la boda: horarios
         actualizados, recordatorios, ubicación, recomendaciones y cualquier
         aviso de última hora.

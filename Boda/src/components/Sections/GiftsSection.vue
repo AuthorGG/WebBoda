@@ -2,8 +2,8 @@
   <SectionWrapper
     id="regalos"
     eyebrow="Regalos"
-    title="Vuestro granito de arroz! (el que no podréis tirar!)"
-    subtitle="Si deseáis hacernos un regalo, además de vuestra presencia, aquí os dejamos estas opciones."
+    title="Vuestro granito de arroz! (¡que no nos podréis tirar!)"
+    subtitle="Si deseáis hacernos un regalo, además de vuestra presencia, aquí os dejamos estas opciones:"
   >
     <div class="grid">
       <GiftExperienceCard
@@ -16,8 +16,8 @@
 
     <p class="note">
       Al elegir una experiencia, te mostraremos el
-      <strong>concepto</strong> recomendado para el Bizum y los números de
-      <strong>Tuto</strong> y <strong>Dayana</strong>.
+      <strong>concepto</strong> recomendado para el Bizum o transferencia y los
+      números de <strong>Tuto</strong> y <strong>Dayana</strong>.
     </p>
 
     <GiftBizumModal

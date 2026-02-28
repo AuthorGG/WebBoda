@@ -60,7 +60,6 @@ const deadlineDate = new Date(weddingDateISO);
 
 const navItems = [
   { id: "inicio", label: "Inicio" },
-  { id: "Gracias", label: "Gracias" },
   { id: "lugar", label: "Lugar" },
   { id: "regalos", label: "Regalos" },
   { id: "contacto", label: "Contacto" },

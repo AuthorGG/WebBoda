@@ -17,7 +17,7 @@
           Una compañía con la que reír, con la que vivir, con la que “gastar” la
           vida en lo verdaderamente importante. Y también estamos aquí porque
           esa riqueza no es solo nuestra sino que crece al compartirla con todos
-          vosotros: familia, amigos, personas que forman parte de su
+          vosotros: familia, amigos, personas que forman parte de nuestra
           historia.<br /><br />
 
           <strong

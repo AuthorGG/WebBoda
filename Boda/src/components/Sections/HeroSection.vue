@@ -2,7 +2,7 @@
   <section id="inicio" class="hero">
     <div class="container">
       <div class="hero__card">
-        <p class="hero__eyebrow">Nos casamos</p>
+        <p class="hero__eyebrow">¡Nos casamos!</p>
         <h1 class="hero__title">{{ coupleName }}</h1>
         <p class="hero__date">{{ dateText }}</p>
 

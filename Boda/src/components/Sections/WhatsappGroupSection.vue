@@ -11,8 +11,9 @@
       <p class="card__text">
         Utilizaremos el grupo de WhatsApp para ir dejando
         <strong>los detalles más importantes</strong> de la boda: horarios
-        actualizados, recordatorios, ubicación, recomendaciones y cualquier
-        aviso de última hora.
+        actualizados,la elección del menú para la comida de ese día!,
+        recordatorios, ubicación, recomendaciones y cualquier aviso de última
+        hora.
       </p>
 
       <p class="card__text">

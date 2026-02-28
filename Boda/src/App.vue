@@ -59,9 +59,9 @@ const deadlineDate = new Date(weddingDateISO);
 const navItems = [
   { id: "inicio", label: "Inicio" },
   { id: "lugar", label: "Lugar" },
+  { id: "grupo-whatsapp", label: "Grupo" },
   { id: "regalos", label: "Regalos" },
   { id: "contacto", label: "Contacto" },
-  { id: "grupo-whatsapp", label: "Grupo" },
 ];
 
 const whatsappTuto = "651032944";

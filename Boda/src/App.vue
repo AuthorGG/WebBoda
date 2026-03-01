@@ -27,7 +27,6 @@
         :bizum-dayana="whatsappDayana"
         :iban="iban"
       />
-      <PlaylistSection />
     </main>
 
     <AppFooter
@@ -44,7 +43,7 @@ import { ref } from "vue";
 import IntroOverlay from "./components/intro/IntroOverlay.vue";
 import AppHeader from "./components/layout/AppHeader.vue";
 import AppFooter from "./components/layout/AppFooter.vue";
-import PlaylistSection from "./components/Sections/PlaylistSection.vue";
+
 import HeroSection from "./components/Sections/HeroSection.vue";
 
 import LocationSection from "./components/Sections/LocationSection.vue";

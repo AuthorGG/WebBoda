@@ -59,7 +59,7 @@ import { ref } from "vue";
 import SectionWrapper from "../layout/SectionWrapper.vue";
 
 const playlistUrl =
-  "https://open.spotify.com/playlist/5pML87bPKq5z6IpTnLn9rV?si=cadd99bd8b8d4f8d&pt=010125efb9c2605e4af7db719b165d2e";
+  "https://open.spotify.com/playlist/5pML87bPKq5z6IpTnLn9rV?si=d5e93e392f9048f4&pt=c43ee7c359a93f813e50253d4432f9dd";
 
 const copied = ref(false);
 

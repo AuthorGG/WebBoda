@@ -48,7 +48,7 @@ import HeroSection from "./components/Sections/HeroSection.vue";
 
 import LocationSection from "./components/Sections/LocationSection.vue";
 import GiftsSection from "./components/Sections/GiftsSection.vue";
-import WhatsappGroupSection from "./components/Sections/WhatsappGroupSection.vue";
+import WhatsappGroupSection from "./components/Sections/RsvpSection.vue";
 const coupleName = "Tuto & Dayana";
 const dateText = "Viernes, 25 de Septiembre de 2026";
 const city = "Alicante";
@@ -59,7 +59,7 @@ const deadlineDate = new Date(weddingDateISO);
 const navItems = [
   { id: "inicio", label: "Inicio" },
   { id: "lugar", label: "Lugar" },
-  { id: "grupo-whatsapp", label: "Grupo" },
+  { id: "rsvp", label: "Asistencia" },
   { id: "regalos", label: "Regalos" },
   { id: "contacto", label: "Contacto" },
 ];

@@ -1,41 +1,34 @@
 <template>
   <SectionWrapper
-    id="grupo-whatsapp"
-    eyebrow="Importante"
-    title="Únete al grupo de WhatsApp"
-    subtitle="Ahí iremos compartiendo toda la información clave para que no se te escape nada."
+    id="rsvp"
+    eyebrow="Confirmación"
+    title="Confirma tu asistencia"
+    subtitle="Para organizarlo todo bien, necesitamos que rellenes el formulario."
   >
     <article class="card">
-      <h3 class="card__title">Necesitamos que estés dentro 🤍</h3>
+      <h3 class="card__title">Es imprescindible que lo completes 🤍</h3>
 
       <p class="card__text">
-        Utilizaremos el grupo de WhatsApp para ir dejando
-        <strong>los detalles más importantes</strong> de la boda: horarios
-        actualizados,la elección del menú para la comida de ese día!,
-        recordatorios, ubicación, recomendaciones y cualquier aviso de última
-        hora.
+        Para confirmar si vienes a la boda (y con cuántos acompañantes),
+        necesitamos que rellenes este formulario. Es la forma más fácil para
+        tenerlo todo ordenado.
       </p>
 
-      <p class="card__text">
-        Por eso, es <strong>imprescindible</strong> que te unas al grupo. Así te
-        aseguras de enterarte de todo sin depender de terceros.
-      </p>
+      <p class="card__text">¡Muchas gracias!</p>
 
       <div class="actions">
         <a
           class="btn btn--primary"
-          :href="groupUrl"
+          :href="formUrl"
           target="_blank"
           rel="noreferrer"
         >
-          Unirme al grupo de WhatsApp
+          Ir al formulario de asistencia
         </a>
       </div>
 
-      <p v-if="copied" class="toast">Enlace copiado ✅</p>
-
       <p class="hint">
-        Consejo: guarda el grupo en favoritos para tenerlo a mano.
+        Consejo: rellénalo cuanto antes para que podamos cerrar lista.
       </p>
     </article>
   </SectionWrapper>
@@ -45,13 +38,14 @@
 import { ref } from "vue";
 import SectionWrapper from "../layout/SectionWrapper.vue";
 
-const groupUrl = "https://chat.whatsapp.com/LfsTxKws2LDBErkxVpnPDt?mode=gi_t";
+const formUrl =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfDZRkYrP9ALXe5meV5jteId7Gb8yCQXAgJtDgg0Gc-Wqrn_g/viewform?usp=publish-editor";
 
 const copied = ref(false);
 
 const copyLink = async () => {
   try {
-    await navigator.clipboard.writeText(groupUrl);
+    await navigator.clipboard.writeText(formUrl);
     copied.value = true;
     setTimeout(() => (copied.value = false), 1400);
   } catch {
@@ -64,15 +58,19 @@ const copyLink = async () => {
 .card {
   max-width: 860px;
   padding: 18px;
+
   background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(43, 42, 45, 0.12);
   border-radius: 18px;
+
   box-shadow:
     0 12px 28px rgba(43, 42, 45, 0.1),
     0 1px 0 rgba(255, 255, 255, 0.75) inset;
 
   display: grid;
   gap: 10px;
+
+  text-align: center;
 }
 
 .card__title {
@@ -85,8 +83,11 @@ const copyLink = async () => {
 .card__text {
   margin: 0;
   color: var(--ink-700);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.65;
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card__text strong {
@@ -168,6 +169,9 @@ const copyLink = async () => {
 
   font-size: 12px;
   font-weight: 800;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hint {
@@ -175,14 +179,11 @@ const copyLink = async () => {
   color: var(--ink-500);
   font-size: 13px;
   line-height: 1.5;
-}
-
-.card__text,
-.hint {
   margin-left: auto;
   margin-right: auto;
   max-width: 70ch;
 }
+
 @media (max-width: 520px) {
   .btn {
     width: 100%;

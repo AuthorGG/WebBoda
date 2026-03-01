@@ -31,8 +31,6 @@
         Todo nos sobra.”
       </p>
 
-      <p class="author">@andresixtepan_</p>
-
       <div class="actions">
         <button class="btn btn--primary" type="button" @click="enter">
           Bienvenidos a nuestro día

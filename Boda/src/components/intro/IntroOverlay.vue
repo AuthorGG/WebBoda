@@ -17,15 +17,20 @@
     </div>
 
     <div class="content" role="dialog" aria-modal="true">
+      <div class="avatar">
+        <img :src="introAvatar" alt="Tuto y Dayana" />
+      </div>
+
       <p class="kicker">Algo sobre la riqueza.</p>
 
       <p class="quote">
         “Estando juntos despilfarramos los besos y la ternura;<br />
         nos gastamos las risas y las horas.<br />
-        El tiempo y el lugar no nos importan.<br />
+        El tiempo y el lugar no nos importan.<br /><br />
         Estando juntos somos ricos:<br />
         Todo nos sobra.”
       </p>
+
       <p class="author">@andresixtepan_</p>
 
       <div class="actions">
@@ -39,6 +44,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
+import introAvatar from "../../assets/intro-avatar.png";
 
 type Petal = {
   id: number;
@@ -96,6 +102,7 @@ const enter = () => {
 
   display: grid;
   place-items: center;
+  padding: 18px;
 
   opacity: 1;
   transition: opacity 800ms ease;
@@ -106,10 +113,46 @@ const enter = () => {
   pointer-events: none;
 }
 
-/* Texto */
+/* Pétalos */
+.petals {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.petal {
+  position: absolute;
+  top: -12%;
+  width: 14px;
+  height: 10px;
+  border-radius: 12px 12px 12px 0;
+
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.95),
+    rgba(249, 194, 187, 0.85)
+  );
+  border: 1px solid rgba(249, 194, 187, 0.35);
+
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(120vh) translateX(12vw) rotate(260deg);
+  }
+}
+
+/* Card de contenido */
 .content {
   position: relative;
-  width: min(880px, calc(100% - 32px));
+  width: min(720px, calc(100% - 24px));
   text-align: center;
 
   background: rgba(255, 255, 255, 0.78);
@@ -120,6 +163,38 @@ const enter = () => {
   padding: 22px 18px;
 
   animation: textIn 600ms ease both;
+}
+
+@keyframes textIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Avatar circular y responsive */
+.avatar {
+  width: clamp(84px, 18vw, 120px);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 14px;
+
+  border-radius: 999px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(43, 42, 45, 0.12);
+  box-shadow: 0 16px 34px rgba(43, 42, 45, 0.14);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .kicker {
@@ -136,6 +211,12 @@ const enter = () => {
   font-weight: 700;
   line-height: 1.7;
   font-size: 16px;
+}
+
+.author {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: var(--ink-500);
 }
 
 .actions {
@@ -185,62 +266,14 @@ const enter = () => {
   border-color: rgba(247, 135, 98, 0.34);
 }
 
-/* Entrada del bloque texto */
-@keyframes textIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px) scale(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-/* Pétalos */
-.petals {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.petal {
-  position: absolute;
-  top: -12%;
-  width: 14px;
-  height: 10px;
-  border-radius: 12px 12px 12px 0;
-
-  background: radial-gradient(
-    circle at 30% 30%,
-    rgba(255, 255, 255, 0.95),
-    rgba(249, 194, 187, 0.85)
-  );
-  border: 1px solid rgba(249, 194, 187, 0.35);
-
-  animation-name: fall;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.author {
-  font-size: 10px;
-}
-@keyframes fall {
-  0% {
-    transform: translateY(0) translateX(0) rotate(0deg);
-  }
-  100% {
-    transform: translateY(120vh) translateX(12vw) rotate(260deg);
-  }
-}
-
 @media (max-width: 520px) {
-  .quote {
-    font-size: 14px;
-  }
   .content {
     padding: 18px 14px;
+    border-radius: 18px;
+  }
+  .quote {
+    font-size: 14px;
+    line-height: 1.65;
   }
   .btn {
     width: 100%;

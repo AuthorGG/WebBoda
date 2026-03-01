@@ -26,7 +26,7 @@
       <p class="quote">
         “Estando juntos despilfarramos los besos y la ternura;<br />
         nos gastamos las risas y las horas.<br />
-        El tiempo y el lugar no nos importan.<br /><br />
+        El tiempo y el lugar no nos importan.<br />
         Estando juntos somos ricos:<br />
         Todo nos sobra.”
       </p>

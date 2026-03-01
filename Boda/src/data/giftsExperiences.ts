@@ -43,7 +43,7 @@ export const giftsExperiences: GiftExperience[] = [
     subtitle: "Cena especial para celebrar",
     description:
       "Una cena de sushi inolvidable para brindar por este nuevo capítulo.",
-    totalCost: 120,
+    totalCost: 60,
     progressPct: 0,
     tags: ["Comida", "Tokio"],
   },

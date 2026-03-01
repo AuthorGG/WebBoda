@@ -55,7 +55,7 @@ export const giftsExperiences: GiftExperience[] = [
     description:
       "Un tour en Jeep de dia completo en el Monte Fuji y Hakone, con vistas panorámicas de la montaña y de la ciudad de Tokio.",
     totalCost: 350,
-    progressPct: 0,
+    progressPct: 100,
     tags: ["Aventura", "Transporte"],
   },
   {

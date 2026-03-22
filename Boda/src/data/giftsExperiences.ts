@@ -37,6 +37,17 @@ export const giftsExperiences: GiftExperience[] = [
     tags: ["Libre", "Gracias 🤍"],
   },
   {
+    id: "experiencia-ryokan",
+    kind: "withCost",
+    title: "Hospedarnos en un Ryokan ",
+    subtitle: "Una experiencia única, poder hospedarnos en un ryokan real",
+    description:
+      "Podremos vivir la experiencia de los baños en un ryokan real, aguas termales y hospedaje típico de Japón.",
+    totalCost: 260,
+    progressPct: 0,
+    tags: ["Ryokan", "Experiencia"],
+  },
+  {
     id: "tokyo-sushi-night",
     kind: "withCost",
     title: "Noche de sushi en Tokio",
@@ -66,7 +77,7 @@ export const giftsExperiences: GiftExperience[] = [
     description:
       "Conoceremos la tradición histórica, la cultura y la arquitectura de Japón en esta excursión de un día a los pueblos de Gujo, Hida Takayama y Shirakawa-go.",
     totalCost: 150,
-    progressPct: 0,
+    progressPct: 100,
     tags: ["excursión"],
   },
   {
@@ -87,7 +98,7 @@ export const giftsExperiences: GiftExperience[] = [
     subtitle: "Una aventura que no olvidaremos",
     description:
       "En esta excursión a Nikko desde Tokio visitaremos sus principales tesoros, entre los que destacan el Templo Toshogu, la cascada de Kegon y el lago Chuzenji.",
-    totalCost: 218.3,
+    totalCost: 220,
     progressPct: 0,
     tags: ["Excursion", "Nikko", "Tokio"],
   },
@@ -101,5 +112,27 @@ export const giftsExperiences: GiftExperience[] = [
     totalCost: 190,
     progressPct: 0,
     tags: ["Excursion", "Nikko", "Tokio"],
+  },
+  {
+    id: "ceremonia-te",
+    kind: "withCost",
+    title: "Ceremonia del Té en Tokio",
+    subtitle: "Ceremonia del Té en Tokio, con kimono, matcha y dulces! 🤍",
+    description:
+      "Una ceremonia tradicional japonesa del té en Tokio. Nos vestiremos con un hermoso (y muy cool) kimono, aprenderemos sobre la historia y la etiqueta de la ceremonia y disfrutaremos de los dulces tradicionales japoneses.",
+    totalCost: 95,
+    progressPct: 0,
+    tags: ["Te", "Experiencia", "Tokio"],
+  },
+  {
+    id: "clase-ramen",
+    kind: "withCost",
+    title: "Clase de cocina para aprender a hacer ramen!",
+    subtitle: "A ver si luego os gusta!",
+    description:
+      "Experimenta la esencia de la comida japonesa del alma, el ramen, en Shinjuku Kabukicho mediante una clase culinaria. Descubre la rica historia que hay detrás del ramen y domina el arte de crearlo desde cero.",
+    totalCost: 120,
+    progressPct: 0,
+    tags: ["Ramen", "Experiencia", "Tokio"],
   },
 ];

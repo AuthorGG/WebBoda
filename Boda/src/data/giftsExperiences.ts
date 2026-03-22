@@ -37,6 +37,17 @@ export const giftsExperiences: GiftExperience[] = [
     tags: ["Libre", "Gracias 🤍"],
   },
   {
+    id: "experiencia-onsen ",
+    kind: "withCost",
+    title: "Un baño en un  onsen",
+    subtitle: "Una experiencia única, poder hospedarnos en un ryokan real",
+    description:
+      "Descubriremos la cultura de los baños japoneses con un guía local.",
+    totalCost: 120,
+    progressPct: 0,
+    tags: ["Onsen", "Experiencia"],
+  },
+  {
     id: "experiencia-ryokan",
     kind: "withCost",
     title: "Hospedarnos en un Ryokan ",

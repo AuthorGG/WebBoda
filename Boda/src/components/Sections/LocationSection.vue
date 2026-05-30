@@ -3,7 +3,7 @@
     id="lugar"
     eyebrow="Dónde y cuándo"
     title="Lugar y horarios"
-    subtitle="Nos vemos en el Club de Campo de Alicante. Aquí tienes todo para llegar sin estrés."
+    subtitle="Nos vemos en Los Jardines de Lola. Aquí tienes todo para llegar sin estrés."
   >
     <article class="card">
       <h3 class="card__title">Celebración</h3>
@@ -12,9 +12,7 @@
         <strong>Fecha:</strong> Viernes, 25 de septiembre de 2026
       </p>
       <p class="card__line"><strong>Hora:</strong> 14:00</p>
-      <p class="card__line">
-        <strong>Lugar:</strong> Club de Campo de Alicante
-      </p>
+      <p class="card__line"><strong>Lugar:</strong> Los Jardines de Lola.</p>
 
       <div class="actions">
         <a class="btn" :href="mapsUrl" target="_blank" rel="noreferrer"
@@ -34,8 +32,7 @@
 import { ref } from "vue";
 import SectionWrapper from "../layout/SectionWrapper.vue";
 
-const mapsUrl =
-  "https://www.google.com/maps/place//data=!4m2!3m1!1s0xd6237286e4ca97b:0x479bc17eed470133?sa=X&ved=1t:8290&ictx=111";
+const mapsUrl = "https://maps.app.goo.gl/GsYDSNRfyFAgp4H1A";
 
 const copied = ref(false);
 

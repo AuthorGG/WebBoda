@@ -143,7 +143,7 @@ export const giftsExperiences: GiftExperience[] = [
     description:
       "Experimenta la esencia de la comida japonesa del alma, el ramen, en Shinjuku Kabukicho mediante una clase culinaria. Descubre la rica historia que hay detrás del ramen y domina el arte de crearlo desde cero.",
     totalCost: 120,
-    progressPct: 0,
+    progressPct: 100,
     tags: ["Ramen", "Experiencia", "Tokio"],
   },
 ];

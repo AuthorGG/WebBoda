@@ -44,7 +44,7 @@ export const giftsExperiences: GiftExperience[] = [
     description:
       "Descubriremos la cultura de los baños japoneses con un guía local.",
     totalCost: 120,
-    progressPct: 0,
+    progressPct: 100,
     tags: ["Onsen", "Experiencia"],
   },
   {

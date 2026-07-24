@@ -55,7 +55,7 @@ export const giftsExperiences: GiftExperience[] = [
     description:
       "Podremos vivir la experiencia de los baños en un ryokan real, aguas termales y hospedaje típico de Japón.",
     totalCost: 260,
-    progressPct: 0,
+    progressPct: 100,
     tags: ["Ryokan", "Experiencia"],
   },
   {

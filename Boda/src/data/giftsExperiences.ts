@@ -121,7 +121,7 @@ export const giftsExperiences: GiftExperience[] = [
     description:
       " exploraremos esta ciudad que fue centro político del Japón medieval.",
     totalCost: 190,
-    progressPct: 0,
+    progressPct: 100,
     tags: ["Excursion", "Nikko", "Tokio"],
   },
   {
@@ -132,7 +132,7 @@ export const giftsExperiences: GiftExperience[] = [
     description:
       "Una ceremonia tradicional japonesa del té en Tokio. Nos vestiremos con un hermoso (y muy cool) kimono, aprenderemos sobre la historia y la etiqueta de la ceremonia y disfrutaremos de los dulces tradicionales japoneses.",
     totalCost: 95,
-    progressPct: 0,
+    progressPct: 100,
     tags: ["Te", "Experiencia", "Tokio"],
   },
   {

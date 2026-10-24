@@ -5,32 +5,6 @@
       <p class="subtitle">
         Escríbenos por WhatsApp y te respondemos en cuanto podamos 🤍
       </p>
-
-      <div class="grid">
-        <a
-          class="box"
-          :href="waUrl(whatsappTuto, defaultText)"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <p class="box__k">WhatsApp</p>
-          <p class="box__name">Tuto</p>
-          <p class="box__v">{{ formatPhone(whatsappTuto) }}</p>
-          <span class="box__btn">Abrir WhatsApp</span>
-        </a>
-
-        <a
-          class="box"
-          :href="waUrl(whatsappDayana, defaultText)"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <p class="box__k">WhatsApp</p>
-          <p class="box__name">Dayana</p>
-          <p class="box__v">{{ formatPhone(whatsappDayana) }}</p>
-          <span class="box__btn">Abrir WhatsApp</span>
-        </a>
-      </div>
     </div>
   </footer>
 </template>

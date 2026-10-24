@@ -19,15 +19,6 @@
       <strong>concepto</strong> recomendado para el Bizum o transferencia y los
       números de <strong>Tuto</strong> y <strong>Dayana</strong>.
     </p>
-
-    <GiftBizumModal
-      v-if="selected"
-      :experience="selected"
-      :bizum-tuto="bizumTuto"
-      :bizum-dayana="bizumDayana"
-      :iban="iban"
-      @close="closeModal"
-    />
   </SectionWrapper>
 </template>
 
